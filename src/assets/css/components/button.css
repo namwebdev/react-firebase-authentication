@@ -1,0 +1,45 @@
+.btn {
+  @apply border text-white rounded-md px-4 py-2 m-2 transition duration-500 select-none focus:outline-none;
+}
+
+.btn-primary {
+  @apply border-indigo-500 bg-indigo-500 hover:bg-indigo-600;
+}
+
+.btn-primary:disabled {
+  @apply border-indigo-200 bg-indigo-200;
+}
+
+.btn-light {
+    @apply border-gray-400 bg-gray-400 hover:bg-gray-600;
+}
+
+/* loading */
+.btn-loading {
+  @apply btn-loader ease-linear rounded-full border-2 border-t-2 border-gray-200 h-5 w-5;
+}
+
+.btn-loader {
+  border-top-color: #3498db;
+  -webkit-animation: spinner 1s linear infinite;
+  animation: spinner 1s linear infinite;
+  margin: 0 auto;
+}
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
